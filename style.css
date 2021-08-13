@@ -1,0 +1,197 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-img {
+    width: 15em;
+}
+nav#nav-bar{
+    display: flex;
+    width: 20em;
+    justify-content: space-evenly;    
+}
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column; 
+    
+}
+label{
+    text-align: center;
+    font-size: 1.7rem;
+}
+input{
+    width: fit-content;
+    margin: 2% 0 0 36%;
+}
+input#email{
+    font-size: 1.3rem;
+}
+input#submit{
+    margin: 1% 0 0 47%;
+    transform: scale(1.3);
+}
+
+#image{
+    float: right;
+}
+#image img{
+    width: 15em;
+    height: 13em;
+
+}
+#shipping{
+    display: flex;
+    justify-content: left;
+}
+#assurance{
+    display: flex;
+    justify-content: left;
+}
+#replacment{
+    display: flex;
+    justify-content: left;
+    margin-left: 1em;
+}
+#replacment p{
+    width: 25em;
+}
+#shipping img{
+    width: 6em;
+}
+#assurance img{
+    width: 6em;
+    height:6em
+}
+#replacment img{
+    width: 6em;
+    height: 5em;
+    margin-top: 1.5em;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em; ;
+}
+#pricing{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-evenly;
+}
+#basic{
+    border: solid 2px;
+    width: 10em;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-right: 1em;
+}
+#basic-heading{
+    border: solid 2px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10em;
+    height: 2.6em;
+    margin-top: 5em;
+    border-bottom: none;
+}
+#bonus{
+    border: solid 2px;
+    width: 10em;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-right: 10%;
+    margin-left: 2%;
+    text-align: center;
+}
+#bonus-heading{
+    border: solid 2px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10em;
+    height: 2.6em;
+    margin-top: 5em;
+    border-bottom: none;
+}
+#premium{
+    border: solid 2px;
+    width: 10em;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-left: 1%;
+    text-align: center;
+}
+#premium-heading{
+    border: solid 2px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10em;
+    height: 2.6em;
+    margin-top: 5em;
+    border-bottom: none;
+    margin-left: 2em;
+}
+#pricing {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    #basic { grid-area: 2 / 1 / 4 / 4; }
+    #basic-heading { grid-area: 1 / 2 / 2 / 3; }
+    #bonus { grid-area: 2 / 4 / 4 / 7; }
+    #bonus-heading { grid-area: 1 / 5 / 2 / 6; }
+    #premium { grid-area: 2 / 7 / 4 / 10; }
+    #premium-heading { grid-area: 1 / 8 / 2 / 9; }
+
+    .heading-box{
+        display: flex;
+    }
+    @media only screen and (max-width: 1050px){
+    #pricing{
+        display: flex;
+        flex-direction: column;
+    }
+    #basic-heading{
+        margin-left: 0.5em;
+    }
+    #bonus-heading{
+        margin-left: 0.5em;
+    }
+    #premium-heading{
+        margin-left: 1.5em;
+        margin-top: 1em;
+    }
+    }
