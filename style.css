@@ -4,8 +4,21 @@ body{
     background: #FF4E50;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-
 }
+
+@media only screen and (max-width: 1050px){
+    
+    #basic-heading{
+        margin-left: 0.5em;
+    }
+    #bonus-heading{
+        margin-left: 0.5em;
+    }
+    #premium-heading{
+        margin-left: 1.5em;
+        margin-top: 1em;
+    }
+    }
 a{
     text-decoration: none;
     color:black;
@@ -15,6 +28,9 @@ a:hover{
     font-size: 1.7rem;
     font-weight: bold;
 }
+
+
+/*header*/
 header {
     background-color: #f3e69e;
     display: flex;
@@ -35,6 +51,9 @@ nav#nav-bar{
     width: 20em;
     justify-content: space-evenly;  
 }
+/*header*/
+
+/*heading and form*/
 h1{
     text-align: center;
     display:flex;
@@ -76,6 +95,9 @@ input#submit{
     height: 13em;
 
 }
+/*heading and form*/
+
+/*features*/
 #shipping{
     display: flex;
     justify-content: left;
@@ -104,6 +126,7 @@ input#submit{
     height: 5em;
     margin-top: 1.5em;
 }
+/*description*/
 div#description{
     font-size: 1.8em;
     border: solid black 2px;
@@ -119,11 +142,43 @@ div#description{
     flex-direction: column;
     margin-left: 1em; ;
 }
+/*description*/
+
+/*pricing*/
+#pricing {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+    #pricing{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @keyframes pricing{
+        50%{
+            transform: scale(1.1);
+        }
+    }
+
+    #basic { grid-area: 2 / 1 / 4 / 4; }
+    #basic-heading { grid-area: 1 / 2 / 2 / 3; }
+    #bonus { grid-area: 2 / 4 / 4 / 7; }
+    #bonus-heading { grid-area: 1 / 5 / 2 / 6; }
+    #premium { grid-area: 2 / 7 / 4 / 10; }
+    #premium-heading { grid-area: 1 / 8 / 2 / 9; }
+
+    
+
 #pricing{
     display: flex;
     flex-direction: row;
   justify-content: space-evenly;
 }
+            /*basic pricing*/
 #basic{
     border: solid 2px;
     width: 10em;
@@ -157,6 +212,14 @@ div#description{
     background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
+
+.basic:hover{
+        animation-name: pricing;
+        animation-duration: 2s;
+    }
+        /*basic pricing*/
+
+        /*bonus pricing*/
 #bonus{
     border: solid 2px;
     width: 10em;
@@ -193,6 +256,15 @@ div#description{
     background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
+
+.bonus:hover{
+        animation-name: pricing;
+        animation-duration: 2s;
+    }
+
+        /*bonus pricing*/
+
+        /*premium pricing*/
 #premium{
     border: solid 2px;
     width: 10em;
@@ -228,54 +300,10 @@ div#description{
     background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-#pricing {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    #basic { grid-area: 2 / 1 / 4 / 4; }
-    #basic-heading { grid-area: 1 / 2 / 2 / 3; }
-    #bonus { grid-area: 2 / 4 / 4 / 7; }
-    #bonus-heading { grid-area: 1 / 5 / 2 / 6; }
-    #premium { grid-area: 2 / 7 / 4 / 10; }
-    #premium-heading { grid-area: 1 / 8 / 2 / 9; }
 
-    .heading-box{
-        display: flex;
-    }
-    @media only screen and (max-width: 1050px){
-    #pricing{
-        display: flex;
-        flex-direction: column;
-    }
-    #basic-heading{
-        margin-left: 0.5em;
-    }
-    #bonus-heading{
-        margin-left: 0.5em;
-    }
-    #premium-heading{
-        margin-left: 1.5em;
-        margin-top: 1em;
-    }
-    }
-    @keyframes pricing{
-        50%{
-            transform: scale(1.1);
-        }
-    }
-    .basic:hover{
-        animation-name: pricing;
-        animation-duration: 2s;
-    }
-    .bonus:hover{
-        animation-name: pricing;
-        animation-duration: 2s;
-    }
     .premium:hover{
         animation-name: pricing;
         animation-duration: 2s;
     }
+        /*premium pricing*/
+    /*pricing*/
