@@ -1,6 +1,8 @@
 body{
-    background-image: linear-gradient(to right top, #0057ff, #0093ff, #00beff, #00e1f7, #00ffd5);
-    color: #ffffff;
+    background-image: url(/image/shoes.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
 }
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Crimson Text', serif;
@@ -52,6 +54,7 @@ nav#nav-bar{
     width: 20em;
     justify-content: space-evenly;  
     color: white;
+
 }
 body {
 font-family: 'Work Sans', sans-serif;
@@ -62,6 +65,9 @@ font-family: 'Crimson Text', serif;
 /*header*/
 
 /*heading and form*/
+.form_heading{
+    padding: 1% 10% 10% 10%;
+}
 h1{
     text-align: center;
     display:flex;
@@ -95,13 +101,11 @@ input#submit{
     transform: scale(1.3);
 }
 
-#image{
-    float: right;
-}
+  
 #image img{
     width: 15em;
     height: 13em;
-
+    float: right;
 }
 /*heading and form*/
 
@@ -109,15 +113,18 @@ input#submit{
 #shipping{
     display: flex;
     justify-content: left;
+    color: black;
 }
 #assurance{
     display: flex;
     justify-content: left;
+    color: black;
 }
 #replacment{
     display: flex;
     justify-content: left;
     margin-left: 1em;
+    color: black;
 }
 #replacment p{
     width: 25em;
@@ -144,6 +151,7 @@ div#description{
     rgba(0, 0, 0, 0.09) 0px 8px 4px, 
     rgba(0, 0, 0, 0.09) 0px 16px 8px, 
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        color: black;
 }
 .text{
     display: flex;
