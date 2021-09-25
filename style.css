@@ -31,6 +31,24 @@ a:hover{
     font-weight: bold;
 }
 
+@media only screen and (max-width: 500px){
+    header{
+        width: auto;
+    }
+    body {
+        background-size: cover;
+        white-space: pre-wrap;
+    }
+    .form_heading{
+        padding: 1% 10% 10% 10%;
+    }
+    label{
+        white-space: pre-wrap;
+    }
+    #header-img{
+        width: 5%;
+    }
+}
 
 /*header*/
 header {
@@ -54,10 +72,15 @@ nav#nav-bar{
     width: 20em;
     justify-content: space-evenly;  
     color: white;
+    margin-right: 5%;
 
+}
+#nav-link{
+    margin-right: 5%;
 }
 body {
 font-family: 'Work Sans', sans-serif;
+width: fit-content;
 }
 h1, h2, h3, h4, h5, h6 {
 font-family: 'Crimson Text', serif;
@@ -77,20 +100,29 @@ h1{
     margin: 1em;
     position:static;
     padding-top: 5em;
+    color: #3377ff;
 }
 form{
     display: flex;
     flex-direction: column;
     align-items:center;
-    
+    background-color: #e1def2;
+    width: min-content;
+    border: 5px #e1def2;
+    border-radius: 10%;
+    padding: 1%;
+    margin-left: 35%;
+    text-align: center;
 }
 label{
     display: flex;
     justify-content: center;
     font-size: 1.7rem;
+    color: #2b5c73;
 }
 input{
     width: fit-content;
+    width: -moz-fit-content;
 }
 input#email{
     font-size: 1.3rem;
@@ -163,6 +195,7 @@ div#description{
 /*pricing*/
 #pricing {
     display: grid;
+    display: -ms-grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
